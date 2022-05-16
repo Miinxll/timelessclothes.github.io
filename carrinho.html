@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/fa9d3a8f9c.js" crossorigin="anonymous"></script>
+    <title>Produto - Timeless Store</title>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo-tb.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li><a href="">Sua conta</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html">
+            <img src="images/cart.png" width="30px" height="30px">
+            </a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+<!---------cart items details------->
+<div class="small container cart-page">
+
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images\buy-1.jpg">
+                    <div>
+                        <p>Camisa Puma vermelha</p>
+                        <small> Preço R$ 60,00</small>
+                        <br>
+                        <a href="">Remover</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"> </td>
+            <td>R$ 60,00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images\buy-2.jpg">
+                    <div>
+                        <p>Tênis HRX</p>
+                        <small> Preço R$ 250,00</small>
+                        <br>
+                        <a href="">Remover</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"> </td>
+            <td>R$ 250,00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="images\buy-3.jpg">
+                    <div>
+                        <p>Calça moletom</p>
+                        <small> Preço R$ 120,00</small>
+                        <br>
+                        <a href="">Remover</a>
+                    </div>
+                </div>
+
+            </td>
+            <td><input type="number" value="1"> </td>
+            <td>R$ 120,00</td>
+        </tr>
+    </table>
+
+<div class="total-price">
+
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>R$ 430,00</td>
+        </tr>
+        <tr>
+            <td>Frete</td>
+            <td>R$ 25,00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>R$ 455,00</td>
+        </tr>
+    </table>
+    
+</div>
+
+
+
+</div>
+
+<!------- Footer -------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Baixe nosso Aplicativo</h3>
+                    <p>Baixe o Aplicativo para Android e Ios.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-tw.png">
+                    <p>O nosso objectivo é tornar o prazer e os benefícios das roupas acessíveis a muitos.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Publicação no Blog</li>
+                        <li>Política de Devolução</li>
+                        <li>Afiliar-se</li>
+                    </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Timeless Clothes</p>
+    </div>
+<!------js para o menu------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight = "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+</body>
+</html>
